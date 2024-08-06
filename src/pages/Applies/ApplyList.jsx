@@ -3,36 +3,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ApplyList = ({ status, title, duration, startDate, endDate }) => {
-	const url = '';
-
-	// const showStatus = () => {};
-
-	// const showTitle = () => {
-	// 	axios
-	// 		.get(url)
-	// 		.then((res) => {
-	// 			// 성공한 경우
-	// 			setTitle(res.data);
-	// 			console.log('상태 가져오기 완료 : ', title);
-	// 		})
-	// 		.catch((err) => {
-	// 			console.log('에러 : ', err);
-	// 		});
-	// };
-
-	// const showDuration = () => {
-	// 	axios
-	// 		.get(url)
-	// 		.then((res) => {
-	// 			// 성공한 경우
-	// 			setDuration(res.data);
-	// 			console.log('상태 가져오기 완료 : ', duration);
-	// 		})
-	// 		.catch((err) => {
-	// 			console.log('에러 : ', err);
-	// 		});
-	// };
-
 	return (
 		<div className={`p-5`}>
 			<div
@@ -55,12 +25,7 @@ const ApplyList = ({ status, title, duration, startDate, endDate }) => {
 						{')'}
 					</p>
 				</div>
-				<div className="p-6 flex flex-wrap">
-					<Link to="/mylists">
-						{' '}
-						{/* 본인이 작성한 글로 이동 */}
-						<p className="font-pretendardLight text-gray-500">Learn more -{'>'}</p>
-					</Link>
+				<div className="p-6 flex flex-wrap ml-auto">
 					<Link className="ml-auto" to="/post">
 						{' '}
 						{/* 참가자 모집글로 이동 */}
