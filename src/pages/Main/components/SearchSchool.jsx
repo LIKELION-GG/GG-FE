@@ -60,12 +60,12 @@ const SearchSchool = () => {
 	};
 
 	return (
-		<div className="w-full h-[204px] border flex gap-[42px] px-[25px] bg-white rounded-2xl pt-[25px]">
+		<div className="w-full h-[15%] border flex gap-[42px] px-[25px] bg-white rounded-2xl pt-[20px]">
 			{univdata ? (
 				<>
 					<p className="text-[12px]">대학교 선택</p>
-					<div className="flex flex-col relative w-[75%]">
-						<div className="flex w-full h-[43px] relative">
+					<div className="flex flex-col relative w-[75%] h-full">
+						<div className="flex w-full h-[60%] relative">
 							<input
 								id="searchBox"
 								type="text"

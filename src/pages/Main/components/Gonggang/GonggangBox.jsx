@@ -33,7 +33,9 @@ const GonggangBox = (data) => {
 					<p className="text-[8px] font-pretendardLight">소요 시간</p>
 					<p className="text-[11px] font-pretendardSemibold">{matchingDuration.name}</p>
 				</div>
-				<div className="text-[11px] px-[24px] font-pretendardSemibold text-center">{result.title}</div>
+				<div className="text-[11px] px-[24px] max-h-[40px] font-pretendardSemibold text-center">
+					{result.title}
+				</div>
 				{result.isuntact ? (
 					<div className="text-[11px] mt-[11px] font-pretendardSemibold text-Blue-500">비대면</div>
 				) : (

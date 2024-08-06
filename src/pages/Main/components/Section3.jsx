@@ -12,7 +12,7 @@ const Section3 = () => {
 		<div className="w-[20%] h-full flex flex-col justify-between relative">
 			<DeadLineInfo />
 			<div className="flex justify-center">
-				<img src="/img/mainBg2.svg" className="w-[204px]" />
+				<img src="/img/mainBg2.svg" className="w-[80%]" />
 			</div>
 			<img
 				src="/img/writeBtn.svg"

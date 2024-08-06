@@ -18,7 +18,7 @@ const Gonggang = () => {
 	};
 
 	return (
-		<div className="w-full h-[50%] border px-[25px] bg-white rounded-t-2xl py-[25px] flex flex-col gap-4">
+		<div className="w-full h-[50%] border px-[25px] bg-white rounded-t-2xl py-[2vh] flex flex-col gap-4">
 			<div className="flex gap-[8px]">
 				<p className="text-[12px]">공강 시간에 할 수 있어요!</p>
 				<img src="/img/moreIcon.svg" onClick={handleClick} className="cursor-pointer" />
