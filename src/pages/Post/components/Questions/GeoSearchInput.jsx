@@ -43,8 +43,6 @@ const GeoSearchInput = () => {
 		setGeoInfo({ ...geoInfo, locationName: name, location_latitude: y, location_longitude: x });
 	};
 
-	console.log(geoInfo);
-
 	return (
 		<div className="flex flex-col relative">
 			<div className="flex">
