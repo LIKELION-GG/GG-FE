@@ -14,7 +14,7 @@ const MyLists = () => {
 
 	const fetchData = async () => {
 		try {
-			const response = await axios.get(apiUrl + '/posts');
+			const response = await axios.get(apiUrl + '/posts/user');
 
 			// 데이터에 Status 키를 추가하는 로직
 			const postsWithStatus = response.data.map((post) => ({
