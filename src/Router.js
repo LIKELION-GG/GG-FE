@@ -56,7 +56,7 @@ const Router = () => {
 					<Route path="/review" element={<Review />} />
 
 					<Route path="/unauthorized" element={<UnAuthorized />} />
-					<Route path="notFound" element={<NotFound />} />
+					<Route path="/notFound" element={<NotFound />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</ReadProvider>
