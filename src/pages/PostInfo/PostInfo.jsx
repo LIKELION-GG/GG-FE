@@ -13,11 +13,6 @@ const PostInfo = () => {
 
 	const { readData, setReadData } = useContext(ReadContext);
 
-	// // 모집글 리스트에서 받아온 id
-	// const postId = 14;
-
-	console.log(postid);
-
 	useEffect(() => {
 		const getPostsInfo = async () => {
 			const data = await getTargetPostInfo(postid);

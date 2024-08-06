@@ -32,7 +32,6 @@ const CategoryBox = ({ position, btn1, btn2 }) => {
 	};
 
 	const handleHelp = () => {
-		console.log('교환할 본인 작성글 선택 페이지로 이동');
 		navigate('/select');
 	};
 

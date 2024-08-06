@@ -45,7 +45,6 @@ const ModalSchoolContent = () => {
 	const selectSchool = (idx) => {
 		setName({ ...name, school: schools[idx].name, schoolId: schools[idx].id });
 		setPostData((prev) => ({ ...prev, universityId: schools[idx].id }));
-		console.log('click');
 		setIsOpen(false);
 	};
 
