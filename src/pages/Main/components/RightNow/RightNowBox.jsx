@@ -4,7 +4,7 @@ const RightNowBox = (data) => {
 	const navigate = useNavigate();
 
 	const handleClick = (id) => {
-		navigate(`posts/${id}`);
+		navigate(`/posts/${id}`);
 	};
 
 	return (

@@ -15,7 +15,7 @@ const GonggangBox = (data) => {
 	const matchingDuration = durationSet.find((item) => item.duration === result.duration);
 
 	const handleClick = (id) => {
-		navigate(`posts/${id}`);
+		navigate(`/posts/${id}`);
 	};
 
 	return (
