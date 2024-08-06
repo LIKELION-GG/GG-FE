@@ -11,12 +11,10 @@ import { PostContext } from '../../context/PostContext';
 const PostDetail = () => {
 	const { postData, setPostData } = useContext(PostContext);
 
-	console.log(postData);
-
 	return (
 		<>
 			<div className="relative pt-[100px] px-[8vw] h-[calc(100vh-72px)] z-10">
-				<PostTitle />
+				<PostTitle text="모집 글 작성하기" />
 				<Modal>
 					<ModalSchoolContent />
 				</Modal>

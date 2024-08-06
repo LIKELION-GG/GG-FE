@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 
 import Modal from '../../components/common/Modal';
 import UserInfoLeft from './components/UserInfoLeft';

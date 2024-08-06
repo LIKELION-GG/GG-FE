@@ -10,21 +10,21 @@ const QuestionRadio = () => {
 	const activeBtn = clsx('py-2 px-4 bg-Blue-200 rounded-lg text-white');
 	const deActiveBtn = clsx('py-2 px-4 rounded-lg border-2 border-black');
 
-	const [faceBtn, setFaceBtn] = useState(postData.isUntact);
-	const [nonFacingBtn, setNonFacingBtn] = useState(!postData.isUntact);
+	const [faceBtn, setFaceBtn] = useState(postData.isuntact);
+	const [nonFacingBtn, setNonFacingBtn] = useState(!postData.isuntact);
 
 	const handleFaceClick = () => {
 		setFaceBtn(true);
 		setNonFacingBtn(false);
 
-		setPostData((prev) => ({ ...prev, isUntact: true }));
+		setPostData((prev) => ({ ...prev, isuntact: true }));
 	};
 
 	const handleNonFacingClick = () => {
 		setFaceBtn(false);
 		setNonFacingBtn(true);
 
-		setPostData((prev) => ({ ...prev, isUntact: false }));
+		setPostData((prev) => ({ ...prev, isuntact: false }));
 	};
 
 	return (

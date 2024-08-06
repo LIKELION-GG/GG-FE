@@ -14,7 +14,7 @@ module.exports = {
 			},
 
 			backgroundColor: {
-				'custom-blue': 'rgba(37, 99, 255, 0.7)',
+				'custom-blue': 'rgba(37, 99, 255, 0.9)',
 			},
 		},
 	},

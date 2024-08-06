@@ -23,7 +23,7 @@ const UserInfoRight = () => {
 		e.preventDefault();
 		const data = await submitUserInfo({ name: name.username, universityId: name.schoolId });
 		if (data) {
-			navigate('/');
+			navigate('/home');
 		}
 	};
 

@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
 const Applicants = () => {
+
 	const [applications, setApplications] = useState([]);
 	const [applyList, setApplyList] = useState([]);
 	const { postId } = useParams();
@@ -26,11 +27,10 @@ const Applicants = () => {
 			console.error('Error fetching data:', error);
 		}
 	};
-
-	// 컴포넌트가 마운트될 때 fetchData 함수를 호출
-	useEffect(() => {
-		fetchData();
-	}, []);
+	// // 컴포넌트가 마운트될 때 fetchData 함수를 호출
+	// useEffect(() => {
+	// 	fetchData();
+	// }, []);
 
 	return (
 		<div className="px-[8vw] mt-16 pt-5">

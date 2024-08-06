@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import NotFound from './pages/NotFound/NotFound';
 import Main from './pages/Main/Main';
@@ -19,39 +19,47 @@ import KakaoRedirect from './pages/Login/kakao/KakaoRedirect';
 
 import { PostProvider } from './context/PostContext';
 import AppliesInfo from './pages/Applies/AppliesInfo';
+import { ReadProvider } from './context/ReadContext';
+import PostUpdate from './pages/Post/PostUpdate';
+import PostUpdateDetail from './pages/Post/PostUpdateDetail';
 
 const Router = () => {
 	return (
 		<PostProvider>
-			<Routes>
-				<Route path="/" element={<Main />} />
+			<ReadProvider>
+				<Routes>
+					<Route path="/" element={<Navigate to="/landing" />} />
+					<Route path="/home" element={<Main />} />
 
-				<Route path="/login" element={<Login />} />
-				<Route path="/login/userinfo" element={<UserInfo />} />
-				<Route path="/authkakao" element={<KakaoRedirect />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/login/userinfo" element={<UserInfo />} />
+					<Route path="/authkakao" element={<KakaoRedirect />} />
 
-				<Route path="/mylists" element={<MyLists />} />
-				<Route path="/mylists/:postId" element={<PostInfo />} />
-				<Route path="/mylists/:postId/applicants" element={<Applicants />} />
+					<Route path="/mylists" element={<MyLists />} />
+					<Route path="/mylists/:postid/applicants" element={<Applicants />} />
 
-				<Route path="/applies" element={<Applies />} />
-				<Route path="/applies/:postId" element={<AppliesInfo />} />
+					<Route path="/applies" element={<Applies />} />
+					<Route path="/applies/:postid" element={<AppliesInfo />} />
 
-				<Route path="/posts/:postid" element={<PostInfo />} />
+					<Route path="/posts/:postid" element={<PostInfo />} />
 
-				<Route path="/post" element={<Post />} />
-				<Route path="/post/detail" element={<PostDetail />} />
+					<Route path="/update/:postid" element={<PostUpdate />} />
+					<Route path="/update/detail/:postid" element={<PostUpdateDetail />} />
 
-				<Route path="/select" element={<Select />} />
+					<Route path="/post" element={<Post />} />
+					<Route path="/post/detail" element={<PostDetail />} />
 
-				<Route path="/landing" element={<Landing />} />
+					<Route path="/select" element={<Select />} />
 
-				<Route path="/review" element={<Review />} />
+					<Route path="/landing" element={<Landing />} />
 
-				<Route path="/unauthorized" element={<UnAuthorized />} />
-				<Route path="notFound" element={<NotFound />} />
-				<Route path="*" element={<NotFound />} />
-			</Routes>
+					<Route path="/review" element={<Review />} />
+
+					<Route path="/unauthorized" element={<UnAuthorized />} />
+					<Route path="/notFound" element={<NotFound />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</ReadProvider>
 		</PostProvider>
 	);
 };
